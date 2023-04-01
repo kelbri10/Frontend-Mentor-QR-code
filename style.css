@@ -1,0 +1,77 @@
+:root{ 
+    --primary-bg-color: hsl(0, 0%, 100%); 
+    --secondary-bg-color: hsl(212, 45%, 89%); 
+    --primary-font-color: hsl(218, 44%, 22%); 
+    --secondary-font-color:  hsl(220, 15%, 55%); 
+    --font-family: 'Outfit', sans-serif; 
+    --primary-font-size: 1rem; 
+    --secondary-font-size: 1.25rem; 
+    --regular-font-weight: 400; 
+    --bold-font-weight: 700; 
+}
+
+*{ 
+    font-family: var(--font-family); 
+    box-sizing: border-box;
+}
+
+body{ 
+    background-color: var(--secondary-bg-color);
+     
+}
+
+.container{
+    width: 315px; 
+    padding: 1rem; 
+    margin: 25% auto; 
+    
+    
+    background-color: var(--primary-bg-color);
+    border-radius: 1rem; 
+
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+h1{ 
+    width: 275px; 
+    padding: 1rem; 
+
+    font-size: var(--secondary-font-size); 
+    font-weight: var(--bold-font-weight); 
+    color: var(--primary-font-color); 
+
+    text-align: center;
+     
+}
+
+p{ 
+    width: 250px; 
+    padding-bottom: 1rem;  
+    font-size: var(--primary-font-size);
+    font-weight: var(--regular-font-weight);
+    color: var(--secondary-font-color); 
+
+    text-align: center; 
+    
+}
+
+img { 
+    width: 275px; 
+    border-radius: 1rem; 
+}
+
+.attribution{ 
+    font-size: 11px; text-align: center; 
+}
+.attribution a{ 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 1440px) { 
+    .container{ 
+        margin: 10% auto; 
+    }
+}
